@@ -18,7 +18,7 @@ namespace Chat_GPT.Controllers
             string apikey = "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";
             string response = "";
             OpenAIAPI gptcontroller = new OpenAIAPI(apikey);
-            CompletionRequest completion = new CompletionRequest();
+            var completion = new CompletionRequest();
             completion.Prompt = input;
             completion.Model = "text-davinci-003";
             completion.MaxTokens = 4000;
