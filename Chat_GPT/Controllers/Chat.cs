@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using OpenAI_API;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Completions;
+using OpenAI_API;
 
 namespace Chat_GPT.Controllers
 {
@@ -14,7 +15,7 @@ namespace Chat_GPT.Controllers
         {
 
             Console.WriteLine("Method Entered!");
-            string apikey = "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";
+            string apikey = "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";
             string response = "";
             OpenAIAPI gptcontroller = new OpenAIAPI(apikey);
             CompletionRequest completion = new CompletionRequest();
