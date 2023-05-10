@@ -15,7 +15,7 @@ namespace Chat_GPT.Controllers
         {
 
             Console.WriteLine("Method Entered!");
-            string apikey = "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";
+            string apikey = "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";
             string response = "";
             OpenAIAPI gptcontroller = new OpenAIAPI(apikey);
             CompletionRequest completion = new CompletionRequest();
@@ -34,7 +34,7 @@ namespace Chat_GPT.Controllers
 
             }
             else
-            { 
+            {
                 return BadRequest("NotFound");
             }
         }
